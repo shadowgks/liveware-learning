@@ -12,6 +12,11 @@ class WireModel extends Component
     public $select = '...';
     public $multiple = [''];
 
+    public function resetTitle($title)
+    {
+        $this->title = $title;
+    }
+
     public function render()
     {
         return view('livewire.wire-model');

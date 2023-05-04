@@ -17,4 +17,10 @@
         <option value="Espane">Espane</option>
     </select>
     Your multiple: {{implode(' ',$multiple)}}
+    <br>
+    <form wire:submit.prevent='resetTitle("Submit Done")'>
+        <button>Reset Title</button>
+    </form>
+    {{-- <button wire:click="resetTitle('')">Reset Title</button> --}}
+    {{-- <button wire:click="resetTitle($event.target.innerText)">Reset Title</button> --}}
 </div>
