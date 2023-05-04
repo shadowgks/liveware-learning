@@ -11,8 +11,10 @@
 </head>
 
 <body>
-    <livewire:counter />
-    <livewire:wire-model />
+    {{-- <livewire:counter />
+    <livewire:wire-model /> --}}
+    <livewire:lifecycle-hooks name='chico'/>
+    {{-- @livewire('lifecycle-hooks', ['name' => 'chico']) --}}
 
     @livewireScripts
 </body>
